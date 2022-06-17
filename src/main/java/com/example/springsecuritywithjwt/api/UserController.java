@@ -48,11 +48,10 @@ public class UserController {
         userService.addRoleToUser(form.getUsername(), form.getRoleName());
         return ResponseEntity.ok().build();
     }
+}
 
-    @Data
-    class RoleToUserForm {
-        private String username;
-        private String roleName;
-    }
-
+@Data
+class RoleToUserForm {
+    private String username;
+    private String roleName;
 }
